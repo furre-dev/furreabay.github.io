@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <script src="script.js" defer></script>
+    <title>Homepage</title>
+</head>
+
+<body>
+    <main class="main-container">
+        <nav class="main-nav">
+            <h2>Furkan Abay</h2>
+            <div class="menu">
+                <a href="index.html" class="is-active">Hem</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="https://github.com/furreabay">Github</a>
+                <a href="cv.html">CV</a>
+            </div>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <nav class="mobile-nav">
+            <div class="mobile-menu">
+                <a href="index.html" class="is-active">Hem</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="https://github.com/furreabay">Github</a>
+                <a href="cv.html">CV</a>
+            </div>
+        </nav>
+        <div class="main-div-container">
+            <div class="container">
+                <div class="title">
+                    <h1 class="welcome-h1">
+                        Välkommen till Furkans sida!
+                    </h1>
+                    <p>
+                        Nedan kan du navigera mellan mitt cv, mina project eller länkar till mer information om mig!
+                    </p>
+                </div>
+                <div class="navigation">
+                    <div class="cards">
+                        <ul class="ul-links border-top">
+                            <li>
+                                <div class="link-card" onClick="location.href='index.html'">
+                                    <div class="card-img">
+                                        <img src="img/home-icon.png" alt="Home icon with gradient background">
+                                    </div>
+                                    <div class="card-content">
+                                        <a href="index.html">Hem</a>
+                                        <p>Tryck här för att komma till första sidan!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link-card" onClick="location.href='portfolio.html'">
+                                    <div class="card-img">
+                                        <img src="img/xp-icon.png" alt="Book icon with gradient background">
+                                    </div>
+                                    <div class="card-content">
+                                        <a href="index.html">Portfolio</a>
+                                        <p>Tryck här för att komma till min portfolio!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link-card" onClick="location.href='https://github.com/furreabay'">
+                                    <div class="card-img">
+                                        <img src="img/github-icon.png" alt="Github logo with gradient background">
+                                    </div>
+                                    <div class="card-content">
+                                        <a href="https://github.com/furreabay">Github</a>
+                                        <p>Tryck här för att komma till min github profil!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link-card" onClick="location.href='cv.html'">
+                                    <div class="card-img">
+                                        <img src="img/cv-icon.png" alt="Paper page icon with gradient background">
+                                    </div>
+                                    <div class="card-content">
+                                        <a href="cv.html">CV</a>
+                                        <p>Tryck här för att komma till mitt cv!</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

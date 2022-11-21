@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="trafficLight.css">
+    <link rel="stylesheet" href="barcodeGenerator.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"
+        defer></script>
+    <script src="script.js" defer></script>
+    <script src="trafficLight.js" defer></script>
+    <script src="repofetch.js" defer></script>
+    <title>Homepage</title>
+</head>
+
+<body>
+    <main class="main-container">
+
+        <!--Nav HTML starts here-->
+        <nav class="main-nav">
+            <h2>Furkan Abay</h2>
+            <div class="menu">
+                <a href="index.html">Hem</a>
+                <a href="portfolio.html" class="is-active">Portfolio</a>
+                <a href="https://github.com/furreabay">Github</a>
+                <a href="cv.html">CV</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <nav class="mobile-nav">
+            <div class="mobile-menu">
+                <a href="index.html">Hem</a>
+                <a href="#" class="is-active">Portfolio</a>
+                <a href="https://github.com/furreabay">Github</a>
+                <a href="cv.html">CV</a>
+            </div>
+        </nav>
+        <!--Nav HTML ends here-->
+        <div class="wrapper">
+            <header class="main-header">
+                <img class="profile-img" src="sources/images/f10.jpeg" alt="image of guy">
+                <h2>Furkan Abay</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur sequi consequatur corporis?
+                    Culpa omnis magnam deleniti excepturi! Molestias incidunt, delectus laboriosam enim officia modi
+                    ducimus beatae, eveniet ea velit ad. </p>
+            </header>
+            <section class="skills-container">
+                <ul class="skills">
+                    <li>
+                        <h2>Skills</h2>
+                    </li>
+
+                    <li>Java</li>
+                    <li>
+                        <div id="java-progress-bar"></div>
+                    </li>
+                    <li>Selenium</li>
+                    <li>
+                        <div id="selenium-progress-bar"></div>
+                    </li>
+                    <li>Javascript</li>
+                    <li>
+                        <div id="javascript-progress-bar"></div>
+                    </li>
+                    <li>Photoshop</li>
+                    <li>
+                        <div id="photoshop-progress-bar"></div>
+                    </li>
+                </ul>
+                <div class="skills-line"></div>
+                <ul class="education">
+                    <li>
+                        <h2>Education</h2>
+                    </li>
+                    <li>Chasacademy</li>
+                    <li>Södertörns Gymnasium</li>
+                </ul>
+                <div class="skills-line"></div>
+                <ul class="languages">
+                    <li>
+                        <h2>Languages</h2>
+                    </li>
+
+                    <li>English</li>
+                    <li>
+                        <div id="english-progress-bar"></div>
+                    </li>
+                    <li>Swedish</li>
+                    <li>
+                        <div id="swedish-progress-bar"></div>
+                    </li>
+                    <li>Turkish</li>
+                    <li>
+                        <div id="turkish-progress-bar"></div>
+                    </li>
+                </ul>
+            </section>
+            <section class="article" id="first-article">
+                <div class="article-text">
+                    <h2 class="article-h1">Fully functional Traffic light!</h2>
+                    <p class="article-p">This project was the first school project where
+                        I was instructed to create a traffic light using
+                        the CSS Flexbox layout. I decided to add simple javascript
+                        to add functionality. <br>Try to click on the RED button when the light already shows red!
+                    </p>
+                    <a href="https://github.com/furreabay/functional-traffic-light" class="article-git">Click to get to
+                        the
+                        Github repository!</a>
+                </div>
+                <div class="light-container  article-content">
+                    <div class="buttons">
+                        <button class="red-btn btn" onclick="redLightBox()"></button>
+                        <button class="green-btn btn" onclick="greenLightBox()"></button>
+                    </div>
+                    <div class="light-holder">
+                        <div id="red-light"></div>
+                        <div id="yellow-light"></div>
+                        <div id="green-light"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="article" id="second-article">
+                <div class="article-text">
+                    <h2 class="article-h1">JS Barcode Generator</h2>
+                    <p class="article-p">This project was built for the warehouse that I
+                        used to work for. The warehouse needed an easily accessable barcode
+                        generator, so I created this one with the help of a js library.
+                    </p>
+                    <a href="https://github.com/furreabay/barcode-generator" class="article-git">Click to get to the
+                        Github repository!</a>
+                </div>
+                <div class="barcode-container article-content">
+                    <svg id="barcode"></svg>
+                    <input type="text" name="textInput" id="textInput" placeholder="Type your value!" maxlength="43"
+                        value="Test me!">
+                    <button id="generateBtn">Generate</button>
+                </div>
+            </section>
+            <section class="article" id="third-article">
+                <div class="article-text">
+                    <h2 class="article-h1">Java Roulette Game (Console only)</h2>
+                    <p class="article-p">This project was made in 2021 when I took a Java course and
+                        wanted to make a cool project which I never built visuals for. It's a Roulette gambling
+                        game wihtout visuals. Click on the roulette icon to make it spin!
+                    </p>
+                    <a href="https://github.com/furreabay/java-roulette-project" class="article-git">Click to get to the
+                        Github repository!</a>
+                </div>
+                <div class="roulette-image  article-content" onclick="spinRoulette()">
+                    <button id="roulette-btn">
+                        <img id="roulette-icon" src="sources/images/roulette.png" onclick="spinRoulette()"
+                            alt="image of roulette table">
+                    </button>
+                </div>
+            </section>
+            <section class="article light-mode" id="fourht-article">
+                <div class="article-text">
+                    <h2 class="article-h1">Light & Dark mode toggle!</h2>
+                    <p class="article-p">This project was made just because of pure boredoom at 02:56AM in my bed!
+                        Click on the moon or sun to toggle between dark and light mode.
+                    </p>
+                    <a href="https://github.com/furreabay/dark-light-mode-toggle" class="article-git">Click to get to
+                        the Github repository!</a>
+                </div>
+                <div class="sun-and-moon-container article-content" id="sun-moon-container">
+                    <button onclick="lightDarkToggle()" id="light-toggle-button">
+                        <img id="sun-and-moon-image" class="sun-and-moon" src="img/sun-and-moon-icons/moon-icon.png"
+                            alt="image of moon">
+                    </button>
+                </div>
+            </section>
+            <section class="article github-repo-list" id="fifth-article">
+                <div class="loadingScreen">
+                    <h2>Loading, pleas wait...</h2>
+                </div>
+                <div class="middle-container">
+                    <h2 class="article-h1">My Github repositories!</h2>
+                    <p class="article-p">From here you can access all of my public github repositories!
+                    </p>
+                </div>
+                <div class="github-repos">
+                    <ul class="repo-ul">
+                    </ul>
+                </div>
+            </section>
+
+
+        </div>
+
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto";
+    background: radial-gradient(circle, rgba(231, 231, 231, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    overflow-x: hidden;
+}
+
+.main-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.ul-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    transition: .5s;
+}
+
+.wrapper {
+    padding: 2em 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.wrapper>* {
+    margin-bottom: 2em;
+}
+
+.main-header {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-img {
+    box-shadow: 0 0 15px;
+    display: block;
+    max-width: 10em;
+    border-radius: 50%;
+    grid-area: profile-pic;
+}
+
+.main-header h1 {
+    margin: auto;
+    font-weight: 300;
+    grid-area: profile-text;
+    font-size: 3em;
+}
+
+.main-header p {
+    text-align: center;
+    margin: 0 auto auto auto;
+    font-size: 1em;
+    font-weight: 100;
+    width: 80%;
+}
+
+.skills-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container>* {
+    padding: 1em;
+}
+
+.skills-container ul {
+    list-style: none;
+    text-align: center;
+    line-height: 3em;
+}
+
+.skills-line {
+    display: none;
+}
+
+
+
+
+.skills-container ul:nth-last-child(-n+3) {
+    border-top: 1px solid #a2a2a2;
+}
+
+.skills-container ul h1 {
+    font-size: 1.7em;
+    font-weight: 300;
+    padding-bottom: .3em;
+}
+
+.skills-container ul li {
+    font-style: italic;
+    font-weight: 300;
+    color: #454545;
+}
+
+
+#java-progress-bar,
+#selenium-progress-bar,
+#javascript-progress-bar,
+#photoshop-progress-bar,
+#english-progress-bar,
+#swedish-progress-bar,
+#turkish-progress-bar {
+    background: white;
+    border: .2em solid #606060;
+    border-radius: 2em;
+    width: 8em;
+    max-width: 90%;
+    height: .6em;
+    margin: 0 auto;
+}
+
+#java-progress-bar {
+    background: linear-gradient(90deg, rgba(246, 246, 246, 1) 0%, rgba(255, 255, 255, 1) 70%, rgba(96, 96, 96, 1) 70%);
+}
+
+#selenium-progress-bar {
+    background: linear-gradient(90deg, rgba(246, 246, 246, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(96, 96, 96, 1) 50%);
+}
+
+#javascript-progress-bar {
+    background: linear-gradient(90deg, rgba(246, 246, 246, 1) 0%, rgba(255, 255, 255, 1) 33%, rgba(96, 96, 96, 1) 33%);
+}
+
+#photoshop-progress-bar {
+    background: linear-gradient(90deg, rgba(246, 246, 246, 1) 0%, rgba(255, 255, 255, 1) 77%, rgba(96, 96, 96, 1) 77%);
+}
+
+.article {
+    background-color: #9A77CF;
+    width: 98%;
+    max-width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 0 0 30px 0 rgba(0, 0, 0, 1);
+    border-radius: 1em;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.article-h1 {
+    color: white;
+    max-width: 10em;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.article-p {
+    margin-top: 1em;
+    color: white;
+    font-size: 1.2em;
+    max-width: 20em;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.article-git {
+    color: #9A77CF;
+    text-align: center;
+    margin-top: 4em;
+    text-decoration: none;
+    font-style: italic;
+    border: 1px solid #363075;
+    background: #363075;
+    padding: 1em;
+    border-radius: 2em;
+    font-weight: 200;
+
+    transition: .4s;
+}
+
+.article-content {
+    margin: 1em 0;
+}
+
+.article-git:hover {
+    color: white;
+    background: none;
+    box-shadow: 0 0 9px black;
+}
+
+#second-article {
+    background: #EC4176;
+}
+
+#second-article .article-git {
+    color: #EC4176;
+}
+
+#second-article .article-git:hover {
+    color: white;
+}
+
+#third-article {
+    background: #FFA45E;
+}
+
+#third-article .article-git {
+    margin-top: 1em;
+    color: #FFA45E;
+}
+
+#third-article .article-git:hover {
+    color: white;
+}
+
+.roulette-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#roulette-icon {
+    width: 24em;
+    cursor: pointer;
+}
+
+img.spin {
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+#roulette-btn {
+    background: none;
+    border: none;
+
+    transition: .4s;
+}
+
+/* Light mode dark mode toggle CSS starts here! */
+
+:root {
+    --lightmode-background-color: #DFE6E9;
+    --darkmode-background-color: #2D3436;
+    ;
+    --light-text-color: white;
+    --dark-text-color: black;
+}
+
+#fourht-article.light-mode {
+    background: var(--lightmode-background-color);
+}
+
+#fourht-article.dark-mode {
+    background: var(--darkmode-background-color);
+}
+
+#light-toggle-button {
+    background: none;
+    border: none;
+}
+
+#fourht-article.light-mode .article-text h1,
+#fourht-article.light-mode .article-text p {
+    color: var(--dark-text-color);
+}
+
+#fourht-article.light-mode .article-git {
+    background: none;
+    color: #363075;
+}
+
+#fourht-article.dark-mode .article-text h1,
+#fourht-article.dark-mode .article-text p,
+#fourht-article.dark-mode .article-text a {
+    color: var(--light-text-color);
+}
+
+
+.sun-and-moon {
+    width: 15rem;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.sun-and-moon:hover {
+    scale: 1.05;
+}
+
+#fifth-article {
+    background: #2b43ac;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    gap: 3rem;
+    overflow: hidden;
+}
+
+.repo-ul {
+    list-style: none;
+    color: white;
+    font-size: 1.3rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+}
+
+.repo-ul>li {
+    box-sizing: content-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 10rem;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+
+    flex-grow: 1;
+
+    font-size: 1.2rem;
+
+    background: rgba(217, 142, 215, 0.27);
+    box-shadow: 0 0 10px black;
+
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.repo-ul>li>p {
+    font-size: .8rem;
+    color: #000000;
+    max-width: 10rem;
+    text-align: center;
+
+    margin: .5rem 0;
+}
+
+.github-link {
+    position: absolute;
+    bottom: 1rem;
+
+    font-size: 0.7rem;
+    color: rgb(79, 87, 205);
+
+    background: white;
+    text-decoration: none;
+    padding: 0.1rem 0.5rem;
+    border-radius: 1rem;
+}
+
+.loadingScreen {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.89);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 100;
+}
+
+.loadingScreen.notloading {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+@media (min-width: 1024px) {
+    .article {
+        flex-direction: row;
+        max-width: 80rem;
+    }
+
+    .main-header {
+        display: grid;
+        grid-template-columns: minmax(auto, 10em) minmax(auto, 50em);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "profile-pic profile-text"
+            "profile-pic .";
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills-container {
+        justify-content: space-around;
+        flex-direction: row;
+        width: 80rem;
+        max-width: 100%;
+    }
+
+    .skills-line {
+        display: block;
+        padding: 0 !important;
+        width: .1rem !important;
+        background: #606060;
+
+    }
+
+    .skills-container ul:nth-last-child(-n+3) {
+        border-top: none;
+    }
+
+    .article-text h1,
+    .article-text p {
+        text-align: left;
+    }
+
+    #second-article .article-text h1,
+    #second-article .article-text p {
+        text-align: right;
+    }
+
+    /* #fifth-article {
+        background: #2b43ac;
+        text-align: center;
+        flex-direction: column;
+
+        gap: 3rem;
+    }
+
+    .repo-ul {
+        list-style: none;
+        color: white;
+        font-size: 1.3rem;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        gap: 2rem;
+    }
+
+    .repo-ul>li {
+        box-sizing: content-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 15rem;
+        margin-bottom: 1rem;
+        padding-bottom: 2rem;
+        flex-grow: 1;
+
+        font-size: 1.2rem;
+
+        background: rgba(145, 145, 145, 0.511);
+        box-shadow: 0 0 10px black;
+
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .repo-ul>li>p {
+        font-size: .8rem;
+        color: #c0c0c0;
+        max-width: 10rem;
+        text-align: center;
+    }
+
+    .github-link {
+        position: absolute;
+        bottom: 1rem;
+
+        font-size: 0.7rem;
+        color: rgb(79, 87, 205);
+
+        background: white;
+        text-decoration: none;
+        padding: 0.1rem 0.5rem;
+        border-radius: 1rem;
+    } */
+
+}

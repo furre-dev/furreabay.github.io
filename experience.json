@@ -1,0 +1,42 @@
+{
+    "work": [
+        {
+            "name": "Dachser",
+            "startYear": "2020",
+            "endYear": "2022",
+            "position": "Lagerarbetare"
+        },
+        {
+            "name": "Instabox",
+            "startYear": "2021",
+            "endYear": "2022",
+            "position": "Budbilsförare"
+        },
+        {
+            "name": "O'learys",
+            "startYear": "2019",
+            "endYear": "2020",
+            "position": "Servitör"
+        },
+        {
+            "name": "Voi Technology",
+            "startYear": "2020",
+            "endYear": "2022",
+            "position": "Lagerarbetare"
+        },
+        {
+            "name": "Tyresö Kök Å Bar",
+            "startYear": "2016",
+            "endYear": "2019",
+            "position": "Servitör"
+        }
+    ],
+    "studies": [
+        {
+            "name": "Södertörns Gymnasium",
+            "studyName": "Samhällsvetenskap",
+            "startYear": "2016",
+            "endYear": "2019"
+        }
+    ]
+}
